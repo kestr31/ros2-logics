@@ -29,6 +29,12 @@ find_package(rosidl_default_generators REQUIRED)
 ################################################################################
 set(msg_files
   "msg/Test.msg"
+  "msg/CAToOffboard.msg"
+  "msg/PFGuidToPFAtt.msg"
+  "msg/PFGprToPFGuid.msg"
+  "msg/PFAttToPFGuid.msg"
+  "msg/OffboardToPFGpr.msg"
+  "msg/PFAttToOffboard.msg"
 )
 
 set(srv_files
@@ -38,6 +44,7 @@ set(srv_files
   "srv/CollisionAvoidanceSetpoint.srv"
   "srv/PathFollowingGuid.srv"
   "srv/PathFollowingGPR.srv"
+  "srv/PPToPF.srv"
 )
 
 set(action_files
